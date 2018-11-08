@@ -23,7 +23,7 @@
             <div class="col-md-8">
                 <h1 class="page-header">
                     <?php echo $cat_title; ?>
-                    <small>stuff and things</small>
+                    <small>Projects</small>
                 </h1>
 
                 <!-- First Blog Post -->

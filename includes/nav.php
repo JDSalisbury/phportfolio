@@ -15,7 +15,6 @@
                     <?php
                         navBarCategoriesDisplay();
                         echo "<li><a href='/phportfolio/about'>ABOUT</a></li>";
-                        echo "<li><a href='/phportfolio/registration'>REGISTRATION</a></li>";
                         echo "<li><a href='/phportfolio/admin'>ADMIN</a></li>";
                     ?>  
                 </ul>

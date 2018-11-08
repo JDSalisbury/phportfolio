@@ -14,7 +14,7 @@
                 $select_all_posts_query = mysqli_query($connection, $query);
                 while($row = mysqli_fetch_assoc($select_all_posts_query)){
                     $post_title = $row["post_title"];
-                    $post_author = $row["post_author"];
+                    
                 }
             }else{
                 header("Location: /phportfolio/index");
@@ -24,7 +24,6 @@
             <div class="col-md-8">
                 <h1 class="page-header">
                     <?php echo $post_title?>
-                    <small>by <?php echo "<a href='/phportfolio/author/$post_author'>{$post_author}</a>"?> </small>
                 </h1>
 
                 <?php 
@@ -34,7 +33,6 @@
 
                             $post_id = $row['post_id'];
                             $post_title = $row["post_title"];
-                            $post_author = $row["post_author"];
                             $post_date = $row["post_date"];
                             $post_image = $row["post_image"];
                             $post_content = $row["post_content"];
@@ -49,8 +47,6 @@
                                 <hr>";
                         }
                 ?>
-
-                <?php include 'includes/comments.php'; ?>
             </div>
            <?php include 'includes/sidebar.php'; ?>
         </div>
