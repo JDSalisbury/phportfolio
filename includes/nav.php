@@ -20,6 +20,7 @@
                         navBarCategoriesDisplay();
                         echo "<li><a href='/phportfolio/about'>ABOUT</a></li>";
                         echo "<li><a href='/phportfolio/services'>SERVICES</a></li>";
+                        echo "<li><a href='/phportfolio/blog'>BLOG</a></li>";
                         echo "<li><a href='/phportfolio/admin'>ADMIN</a></li>";
                     ?>  
                 </ul>
