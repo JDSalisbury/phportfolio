@@ -7,7 +7,6 @@
             <div class="col-md-8">
                 <h1 class="page-header">
                     SERVICES
-                    <small>stuff and things</small>
                 </h1> 
             </div>
            <?php include 'includes/sidebar.php'; ?>
