@@ -1,3 +1,4 @@
+<IfModule mod_rewrite.c>
 RewriteEngine on
 
 RewriteRule ^(index|about|registration)$ $1.php [NC,L]
@@ -7,3 +8,4 @@ RewriteRule ^post/(\d+)$ post.php?p_id=$1 [NC,L]
 RewriteRule ^category/(\d+)$ category.php?c_id=$1 [NC,L]
 
 RewriteRule ^author/(\D+)$ author.php?author=$1 [NC,L]
+</IfModule>

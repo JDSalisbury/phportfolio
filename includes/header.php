@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="/phportfolio/css/bootstrap.min.css" rel="stylesheet">
+    
 
     <!-- Custom CSS -->
     <link href="/phportfolio/css/blog-home.css" rel="stylesheet">

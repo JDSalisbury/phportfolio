@@ -11,7 +11,7 @@ function navBarCategoriesDisplay(){
     while($row = mysqli_fetch_assoc($select_all_categories_query)){
        $cat_title = $row["cat_title"];
        $cat_id = $row["cat_id"];   
-       echo "<li><a href='/phportfolio/category/$cat_id'>{$cat_title}</a></li>";
+       echo "<li><a href='category.php?c_id=$cat_id'>{$cat_title}</a></li>";
     }
 
 }
@@ -66,7 +66,7 @@ function displaySetupForPost($row){
 
     
     
-    echo "<h2><a href='/phportfolio/post/$post_id'>{$post_title}</a></h2>
+    echo "<h2><a href='post.php?p_id={$post_id}'>{$post_title}</a></h2>
         <p><span class='glyphicon glyphicon-time'></span>{$post_date}</p>
         <hr>
         <img class='img-responsive' src='/phportfolio/images/{$post_image}' alt=''>

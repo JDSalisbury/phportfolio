@@ -7,5 +7,5 @@
         $_SESSION['lastname'] = null;
         $_SESSION['user_role'] = null;
         $_SESSION['user_image'] = null;
-header("Location: /cms/index.php ");
+header("Location: /phportfolio/index.php ");
 ?>

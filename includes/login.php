@@ -28,7 +28,7 @@ if(isset($_POST['login'])){
         $db_user_image = $row['user_image'];
     }
 
-    $password = crypt($password, $db_password);
+    // $password = crypt($password, $db_password);
     
     if($username === $db_username && $password === $db_password){
         $_SESSION['user_id'] = $db_id;
@@ -39,7 +39,7 @@ if(isset($_POST['login'])){
         $_SESSION['user_image'] = $db_user_image;
         header("Location: ../admin");
     } else{
-        header("Location: ../cms/index ");
+        header("Location: ../admin/index.php ");
     }
 
 

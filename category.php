@@ -23,12 +23,9 @@
             <div class="col-md-8">
                 <h1 class="page-header">
                     <?php echo $cat_title; ?>
-                    <small>Projects</small>
                 </h1>
-
                 <!-- First Blog Post -->
                 <?php 
-
                     $query = "SELECT * FROM posts WHERE post_category_id = $category_id";
                     $select_all_posts_query = mysqli_query($connection, $query);
                         while($row = mysqli_fetch_assoc($select_all_posts_query)){
